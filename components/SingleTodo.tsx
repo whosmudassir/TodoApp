@@ -7,11 +7,11 @@ interface Todos{
      id:string,
      todo:string,
      complete:boolean
- }[]
+ }
  }
  
 
-export default function SingleTodo({todo, id, complete}) {
+export default function SingleTodo({todo, id, complete}:Todos["todo"]) {
     const deleteTodo = () => {
         db.collection("todos").doc(id).delete();
       };
