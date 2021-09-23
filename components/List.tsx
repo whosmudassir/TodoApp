@@ -34,9 +34,9 @@ export default function List() {
 
 
     return (
-        <View>
+        <View style={styles.itemContainer}>
             
-            <View style={styles.itemContainer}>
+            <View >
          
                     <FlatList
                     keyExtractor={(item)=>item.id}
@@ -52,7 +52,7 @@ export default function List() {
 
 const styles=StyleSheet.create({
     itemContainer:{
-        
+     
         margin:10
       }
 })

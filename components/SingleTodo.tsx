@@ -36,8 +36,9 @@ export default function SingleTodo({todo, id, complete}:Todos["todo"]) {
 
 const styles = StyleSheet.create({
     list:{
+        flex:1,
         flexDirection:'row',
-        marginBottom:5
+        marginBottom:20
     },
     todo:{
         fontSize:20
